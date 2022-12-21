@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+import imageOne from './couple.jpg';
+import imageTwo from './family.jpg'
 import './App.css';
+import { List } from './List';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='box'>
+    <div className='app'>
+      <div className='leftImg'>
+        <img src={imageOne} width="200px" alt=""/>
+      </div>
+      <h1>Что взять с собой на море?</h1>
+      <List />
+      <div className='rightImg'>
+        <img src={imageTwo} width="200px" alt=""/>
+      </div>
+    </div>
     </div>
   );
 }
 
 export default App;
+

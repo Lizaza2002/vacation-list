@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+body {
+    background-color: #ABD9FF;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+    background-color: white;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    display: flex;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    font-family: 'Unbounded', cursive;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.leftImg {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+    margin-top: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.rightImg {
+    margin-top: 40px;
+    margin-bottom: 6px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.crossed {
+    text-decoration: line-through 2px red;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    color: white;
+    font-size: 16px;
+    font-family: 'Unbounded', cursive;
+    }
+
+.add {
+    background: #65aa06;
+    margin-top: 5px;
+}
+    
+.delete {
+    background: #d30100;
+    margin-bottom: 5px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    margin: 10px;
+    font-family: 'Unbounded', cursive;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    font-family: 'Unbounded', cursive;
+}
+
+@media all and (max-width: 500px) {
+    .app {
+        width: 350px;
+    }
+    h1 {
+        font-size: 20px;
+    }
 }
