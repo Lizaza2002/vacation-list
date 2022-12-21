@@ -15,6 +15,18 @@ body {
 .box {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.attribute {
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(101, 101, 247);
 }
 
 h1 {

@@ -18,6 +18,9 @@ function App() {
         <img src={imageTwo} width="200px" alt=""/>
       </div>
     </div>
+    <div>
+      <p className='attribute'>Icons and images from <a className='link' href='https://www.freepik.com/'>freepik.com</a></p>
+    </div>
     </div>
   );
 }
